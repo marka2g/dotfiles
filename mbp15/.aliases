@@ -7,14 +7,6 @@ else # macOS `ls`
 	export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
 fi
 
-
-# Shortcuts
-alias d="cd ~/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias pd="cd ~/Dropbox/Projects"
-# alias pd='cd /Users/marksadegi/Dropbox/Projects'
-
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -34,6 +26,10 @@ alias l="ls -lF ${colorflag}"
 alias la="ls -laF ${colorflag}"
 alias ls="command ls ${colorflag}"
 
+# postgresql
+alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+
 # git
 alias g="git"
 alias ga="git add"
@@ -51,6 +47,16 @@ alias gb="git branch -v"
 alias gco="git checkout"
 alias gam="git add -A && git commit -v -m"
 
+# Shortcuts
+alias d="cd ~/Dropbox"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias pd="cd ~/Dropbox/Projects"
+alias dot="cd ~/Dropbox/Projects/dotfiles"
+alias op="cd ~/Dropbox/Projects/output"
+alias lj="cd ~/Dropbox/Projects/output/looper-json-api"
+alias lw="cd ~/Dropbox/Projects/output/looper-json-api"
+# alias pd='cd /Users/marksadegi/Dropbox/Projects'
 # {} from https://github.com/mathiasbynens/dotfiles/blob/master/.aliases {}
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
